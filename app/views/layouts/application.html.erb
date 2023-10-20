@@ -26,7 +26,7 @@
               <% if user_signed_in? %>
               
                 <li >
-                  <%= link_to root_path, class: 'nav-link text-white' do %>
+                  <%= link_to user_path(current_user.id), class: 'nav-link text-white' do %>
                     <i class="fa-solid fa-home"></i>
                     Home
                   <% end %>
@@ -71,7 +71,7 @@
                 </li>
                 <li>
                   <%= link_to new_user_session_path, class: 'nav-link text-white' do %>
-                    <i class="fa-solid fa-arrow-right-to-bracket"></i>
+                    <i class="fa-solid fa-sign-in-alt"></i>
                     Log in
                   <% end %>
                 </li>                
