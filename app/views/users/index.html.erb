@@ -63,8 +63,9 @@
             <% @users.each do |user| %>
             <tr>
               <td></td>
-              <td><%= user.profile_image %></td>
+              <td><%= user.get_profile_image(100,100) %></td>
               <td><%= user.name %></td> 
+              <td><%= link_to "show", user %></td>
             </tr>
             <% end %>
           </tbody>
